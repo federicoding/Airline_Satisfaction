@@ -26,10 +26,10 @@ def main():
     <h1 style ="color:black;text-align:center;">Streamlit Loan Prediction ML App</h1> 
     </div> 
     """
-      
+    
     # display the front end aspect
     st.markdown(html_temp, unsafe_allow_html = True) 
-      
+    
     # following lines create boxes in which user can enter data required to make prediction
     Inflight_Wifi_Service = st.selectbox('Inflight Wifi Service',(1,2,3,4,5))
     Ease_Of_Online_Booking = st.selectbox('Ease Of Online Booking',(1,2,3,4,5))
@@ -48,7 +48,7 @@ def main():
     Class_Economy = st.selectbox('Class_Economy',(0,1))
     
     result =""
-      
+    
     # when 'Predict' is clicked, make the prediction and store it 
     if st.button("Predict"): 
         result = prediction(Inflight_Wifi_Service,Ease_Of_Online_Booking,Food_And_Drink,Online_Boarding,Seat_Comfort,Inflight_Entertainment,On_board_Service,Leg_Room,Baggage_Handling,Checkin_Service,Inflight_Service,Cleanliness,Customer_Type_Returning_Customer,Type_Of_Travel_Personal_Travel,Class_Economy) 
