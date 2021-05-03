@@ -69,7 +69,7 @@ This app predicts the **Satisfaction** of a customer!
 
 st.sidebar.header('User Imput Parameters')
 
-@st.cache
+#@st.cache
 def user_input_features():
   Inflight_Wifi_Service = st.sidebar.selectbox('Inflight Wifi Service',[1,2,3,4,5])
   Ease_Of_Online_Booking = st.sidebar.selectbox('Ease Of Online Booking',[1,2,3,4,5])
