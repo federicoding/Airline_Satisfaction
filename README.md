@@ -13,6 +13,6 @@ This decision (based on facility of implementation, compared to Flask and others
 
 The following files derive from this necessity:
 Online_StreamlineV2.ipynb (used to run the App on Colab by means of ngrock)
-GoingOnlineFinalV1.ipynb (used to %%write the App.py to run with Streamlit).
+GoingOnlineFinalV1.ipynb (used to %%write the AppV4.py to run with Streamlit).
 
 This work constitutes a first step, and more improvements can be expected for future works and implementation. But as always, the first steps are baby steps ^^
