@@ -114,7 +114,7 @@ prediction = rf.predict(df)
 prediction_proba = rf.predict_proba(df)
 
 st.subheader('Class labels and their corresponding index number')
-st.write('satisfied':1,'neutral or dissatisfied':0)
+st.write('satisfied:1,neutral or dissatisfied:0')
 
 st.subheader('Prediction')
 st.write(prediction)
