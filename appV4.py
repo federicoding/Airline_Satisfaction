@@ -6,8 +6,6 @@ from sklearn.ensemble import RandomForestClassifier
 
 df = pd.read_csv(filepath_or_buffer='https://raw.githubusercontent.com/federicoding/Airline_Satisfaction/main/Airline_Dataset.csv',sep=';')
 
-@st.cache
-
 df['Customer Type'] = df['Customer Type'].map({'Loyal Customer':'Returning Customer', 'disloyal Customer':'First-time Customer'})
 
 df = df.dropna(axis=0)
@@ -71,6 +69,7 @@ This app predicts the **Satisfaction** of a customer!
 
 st.sidebar.header('User Imput Parameters')
 
+@st.cache
 def user_input_features():
   Inflight_Wifi_Service = st.sidebar.selectbox('Inflight Wifi Service',[1,2,3,4,5])
   Ease_Of_Online_Booking = st.sidebar.selectbox('Ease Of Online Booking',[1,2,3,4,5])
