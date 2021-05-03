@@ -6,7 +6,7 @@ Mainly to train on a bunch of different approaches, with Python.
 
 The main calculations and model research is in the AirlineSatisfactionProject.ipynb
 
-##Going Online!
+## Going Online!
 
 I've decide to get the model Online by means of Streamlit.
 This decision (based on facility of implementation, compared to Flask and others approaches) did bring some unexpected manipulations. Usualy such apps are run on a local server, and Streamlit is a very rapid implementation in such cases. But, as I've decided to work mainly on GoogleColab Notebooks (for ease of use and accessibility), some circunvent work has to be done in order to implement and run the app via Colab.
