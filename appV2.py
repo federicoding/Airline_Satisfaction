@@ -1,12 +1,12 @@
 
 import numpy as np
 import pandas as pd
+import streamlit as st
 
 from sklearn.ensemble import RandomForestClassifier
 
 url='https://raw.githubusercontent.com/federicoding/Airline_Satisfaction/main/Airline_Dataset.csv'
-df = pd.read_csv(filepath_or_buffer=url,
-                 sep=';')
+df = pd.read_csv(filepath_or_buffer=url,sep=';')
 
 @st.cache
 
