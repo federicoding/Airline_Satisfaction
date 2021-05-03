@@ -6,7 +6,7 @@ from sklearn.ensemble import RandomForestClassifier
 
 df = pd.read_csv(filepath_or_buffer='https://raw.githubusercontent.com/federicoding/Airline_Satisfaction/main/Airline_Dataset.csv',sep=';')
 
-#@st.cache
+@st.cache
 
 df['Customer Type'] = df['Customer Type'].map({'Loyal Customer':'Returning Customer', 'disloyal Customer':'First-time Customer'})
 
