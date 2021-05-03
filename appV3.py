@@ -8,7 +8,7 @@ from sklearn.ensemble import RandomForestClassifier
 #url='https://raw.githubusercontent.com/federicoding/Airline_Satisfaction/main/Airline_Dataset.csv'
 #df = pd.read_csv(filepath_or_buffer=url,sep=';')
 
-@st.cache
+#@st.cache
 
 df['Customer Type'] = df['Customer Type'].map({'Loyal Customer':'Returning Customer', 'disloyal Customer':'First-time Customer'})
 
