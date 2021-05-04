@@ -3,8 +3,7 @@ import pickle
 import streamlit as st
 
 #loading the trained model
-pickle_in = open("Airline_satif_model.pkl", "rb")
-classifier = pickle.load(pickle_in)
+classifier = pickle.load(open("Airline_satif_model.pkl", "rb"))
 
 @st.cache()
 def prediction_func(Inflight_Wifi_Service,Ease_Of_Online_Booking,
