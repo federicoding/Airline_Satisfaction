@@ -3,7 +3,7 @@ import pickle
 import streamlit as st
 
 #loading the trained model
-picle_in = open('Airline_satif_model.pkl', 'rb')
+pickle_in = open('Airline_satif_model.pkl', 'rb')
 classifier = pickle.load(pickle_in)
 
 @st.cache()
